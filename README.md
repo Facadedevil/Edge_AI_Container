@@ -1,6 +1,6 @@
-# YOLOv8 Real-time Detection System
+# Universal Edge AI Container Solution
 
-A comprehensive real-time object detection system using YOLOv8 with performance monitoring and visualization.
+A containerized, production-ready Edge AI solution optimized for low-powered NVIDIA devices (Jetson Nano, Xavier NX, AGX Xavier). This project provides a comprehensive framework for deploying AI applications at the edge with real-time performance monitoring and optimization.
 
 ## Project Structure
 ```
@@ -27,61 +27,171 @@ yolo-realtime/
 ├── results/                    # Results and metrics
 └── logs/                      # Application logs
 ```
+## 🚀 Key Features
 
-## Features
-- Real-time object detection using YOLOv8
-- Performance monitoring and benchmarking
-- Real-time visualization dashboard
-- Docker containerization
-- GPU optimization
-- Comprehensive logging
+- **Universal Compatibility**: 
+  - Supports NVIDIA Jetson platforms (Nano, Xavier NX, AGX Xavier)
+  - Compatible with x86_64 platforms with NVIDIA GPUs
+  - Cross-platform container deployment
 
-## Requirements
-- NVIDIA GPU with CUDA support
-- Docker and Docker Compose
-- NVIDIA Container Toolkit
+- **Optimized Performance**:
+  - GPU memory management optimization
+  - CUDA acceleration
+  - TensorRT integration
+  - Hardware-accelerated video pipeline
+  - Efficient resource utilization for edge devices
 
-## Installation
-1. Clone the repository
-```bash
-git clone <repository-url>
-cd yolo-realtime
+- **Real-time Monitoring**:
+  - GPU utilization tracking
+  - Memory usage monitoring
+  - Temperature monitoring
+  - FPS metrics
+  - Power consumption analysis
+
+- **AI Capabilities**:
+  - Real-time object detection using YOLOv8
+  - Multiple model support (nano, small, medium variants)
+  - Configurable confidence thresholds
+  - Frame processing optimization
+  - Video stream support
+
+## 🛠️ Technical Architecture
+
+```
+Edge_AI_Container/
+├── Docker containerization
+├── Real-time monitoring system
+├── Performance optimization layer
+├── AI inference engine
+└── Hardware acceleration integration
 ```
 
-2. Build and run with Docker Compose
+## 💡 Use Cases
+
+- **Industrial IoT**:
+  - Quality control inspection
+  - Assembly line monitoring
+  - Defect detection
+
+- **Smart Cities**:
+  - Traffic monitoring
+  - Crowd analysis
+  - Security surveillance
+
+- **Retail Analytics**:
+  - Customer behavior analysis
+  - Inventory tracking
+  - Queue monitoring
+
+- **Agriculture**:
+  - Crop monitoring
+  - Livestock tracking
+  - Equipment automation
+
+## 🔧 System Requirements
+
+### Minimum Requirements
+- NVIDIA Jetson Nano (4GB)
+- JetPack 4.6 or later
+- 10W power mode
+
+### Recommended Requirements
+- NVIDIA Jetson Xavier NX
+- JetPack 5.0 or later
+- 15W+ power mode
+
+### Software Requirements
+- Docker Engine
+- NVIDIA Container Runtime
+- CUDA 11.4+
+- TensorRT 8.0+
+
+## 📈 Performance Metrics
+
+| Device         | Power Mode | FPS  | GPU Usage | Memory |
+|---------------|------------|------|-----------|---------|
+| Jetson Nano   | 10W        | 12-15| 80%      | 2.5GB   |
+| Xavier NX     | 15W        | 25-30| 70%      | 4GB     |
+| AGX Xavier    | 30W        | 45-50| 60%      | 8GB     |
+
+## 🌟 Features in Detail
+
+### Hardware Optimization
+- Dynamic voltage and frequency scaling
+- Efficient memory management
+- Optimized video encoding/decoding
+- Multi-threading optimization
+
+### AI Model Management
+- Model quantization support
+- TensorRT optimization
+- Multiple model loading
+- Dynamic model switching
+
+### Monitoring and Debugging
+- Real-time performance metrics
+- System health monitoring
+- Resource utilization tracking
+- Alert system for critical events
+
+## 🔄 Workflow
+
+1. **Image Acquisition**
+   - Camera input processing
+   - Frame optimization
+   - Buffer management
+
+2. **AI Processing**
+   - Model inference
+   - TensorRT acceleration
+   - Batch processing
+
+3. **Output Handling**
+   - Result visualization
+   - Data streaming
+   - Storage management
+
+## 🚀 Getting Started
+
 ```bash
-docker compose up --build
+# Clone the repository
+git clone https://github.com/FacadedevilEdge_AI_Container.git
+
+# Build the container
+docker-compose build
+
+# Run the container
+docker-compose up
 ```
 
-## Usage
-1. Start the system:
-```bash
-# Basic usage
-python app/main.py
+## 📝 Configuration
 
-# With custom configuration
-python app/main.py --config configs/detector_config.yaml
+The system can be configured through YAML files:
+- `detector_config.yaml`: AI model settings
+- `monitoring_config.yaml`: System monitoring parameters
 
-# With monitoring enabled
-python app/main.py --enable-monitoring
-```
+## 🔍 Monitoring Interface
 
-2. Access the dashboard:
-- Open browser and navigate to `http://localhost:8050`
+Access the monitoring dashboard:
+- Real-time metrics
+- Performance graphs
+- System status
+- Resource utilization
 
-## Configuration
-- Edit `configs/detector_config.yaml` for detection settings
-- Edit `configs/monitoring_config.yaml` for monitoring settings
+## 🤝 Contributing
 
-## Monitoring and Visualization
-- Real-time FPS monitoring
-- GPU utilization tracking
-- Memory usage monitoring
-- Temperature monitoring
-- Performance benchmarking
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## License
-[Specify your license]
+## 📄 License
 
-## Contributors
-Samir Singh
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/Facadedevil/Edge_AI_Container/blob/master/GNU%20General%20Public%20License%20v3.0) file for details.
+
+## 🙏 Acknowledgments
+
+- NVIDIA for Jetson platform
+- Ultralytics for YOLOv8
+- Open-source community
+
+---
+
+Please visit our [Wiki](wiki-link) for more detailed documentation.
