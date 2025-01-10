@@ -44,7 +44,7 @@ yolo-realtime/
 ## Installation
 1. Clone the repository
 ```bash
-[git clone https://github.com/Facadedevil/Edge_AI_Container]
+git clone https://github.com/Facadedevil/Edge_AI_Container
 cd Edge_AI_Container
 ```
 
