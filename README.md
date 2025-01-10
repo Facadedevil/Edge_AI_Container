@@ -184,7 +184,7 @@ Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Facadedevil/Edge_AI_Container/blob/master/GNU%20General%20Public%20License%20v3.0) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/Facadedevil/Edge_AI_Container/blob/master/GNU%20General%20Public%20License%20v3.0) file for details.
 
 ## 🙏 Acknowledgments
 
