@@ -50,7 +50,7 @@ cd yolo-realtime
 
 2. Build and run with Docker Compose
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
 
 ## Usage
@@ -67,7 +67,7 @@ python app/main.py --enable-monitoring
 ```
 
 2. Access the dashboard:
-- Open browser and navigate to `http://localhost:8050`
+- Open the browser and navigate to `http://localhost:8050`
 
 ## Configuration
 - Edit `configs/detector_config.yaml` for detection settings
@@ -79,9 +79,6 @@ python app/main.py --enable-monitoring
 - Memory usage monitoring
 - Temperature monitoring
 - Performance benchmarking
-
-## License
-[Specify your license]
 
 ## Contributors
 Samir Singh
