@@ -1,0 +1,25 @@
+advantech/
+├── Dockerfile
+├── docker-compose.yml
+├── README.md
+├── app/
+│   ├── main.py
+│   ├── realtime_detector.py
+│   ├── benchmark_utils.py
+│   ├── monitoring_service.py
+│   ├── visualization_service.py
+│   └── utils/
+│       ├── init.py
+│       ├── performance.py
+│       └── visualization.py
+├── configs/
+│   ├── detector_config.yaml
+│   └── monitoring_config.yaml
+├── data/
+│   └── test_images/
+├── models/
+│   ├── yolov8m.pt
+│   ├── yolov8n.pt
+│   └── yolov8s.pt
+├── results/
+└── logs/

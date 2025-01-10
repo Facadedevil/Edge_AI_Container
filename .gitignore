@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+
+# Logs
+logs/
+*.log
+
+# Models (large files)
+models/*.pt
+
+# Results and temp files
+results/
+temp/
+.DS_Store
+
+# IDE
+.vscode/

@@ -1,0 +1,103 @@
+# monitoring_config.yaml
+
+# General Configuration
+general:
+  monitoring_interval: 1.0
+  buffer_size: 30
+  results_path: '/workspace/results'
+  log_level: 'INFO'
+
+# Metrics Configuration
+metrics:
+  gpu:
+    enabled: true
+    interval: 1.0
+    collect:
+      - utilization
+      - memory
+      - temperature
+      - power
+      - clock_speed
+
+  memory:
+    enabled: true
+    interval: 1.0
+    collect:
+      - used
+      - free
+      - percentage
+      - vram_used
+      - vram_free
+
+  cpu:
+    enabled: true
+    interval: 1.0
+    collect:
+      - utilization
+      - per_core
+      - temperature
+      - frequency
+
+  performance:
+    enabled: true
+    interval: 1.0
+    collect:
+      - fps
+      - latency
+      - inference_time
+      - preprocessing_time
+      - postprocessing_time
+
+# Alert Configuration
+alerts:
+  gpu_temperature:
+    enabled: true
+    threshold: 80
+    action: 'log'  # 'log', 'email', or 'webhook'
+
+  gpu_memory:
+    enabled: true
+    threshold: 90
+    action: 'log'
+
+  fps:
+    enabled: true
+    min_threshold: 15
+    action: 'log'
+
+  gpu_utilization:
+    enabled: true
+    threshold: 95
+    action: 'log'
+
+# Logging Configuration
+logging:
+  file:
+    enabled: true
+    path: '/workspace/logs/monitoring.log'
+    max_size: 10485760  # 10MB
+    backup_count: 5
+
+  metrics_storage:
+    format: 'json'
+    retention_days: 7
+    compression: true
+
+# Visualization Configuration
+visualization:
+  update_interval: 1000  # milliseconds
+  max_data_points: 100
+  theme: 'dark'  # 'dark' or 'light'
+  graphs:
+    - type: 'line'
+      metric: 'fps'
+      title: 'Frames Per Second'
+    - type: 'line'
+      metric: 'gpu_utilization'
+      title: 'GPU Utilization'
+    - type: 'line'
+      metric: 'memory_usage'
+      title: 'Memory Usage'
+    - type: 'line'
+      metric: 'temperature'
+      title: 'Temperature'

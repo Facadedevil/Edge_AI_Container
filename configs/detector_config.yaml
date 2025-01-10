@@ -1,0 +1,50 @@
+# detector_config.yaml
+
+# Model Configuration
+model:
+  path: '/workspace/models/yolov8n.pt'
+  input_size: [640, 640]
+  conf_threshold: 0.3
+  iou_threshold: 0.45
+  max_det: 300
+  classes: null  # Detect all classes
+
+# Processing Configuration
+processing:
+  buffer_size: 30
+  batch_size: 1
+  enable_tracking: true
+  tracking_config:
+    tracker_type: 'bytetrack'
+    track_buffer: 30
+    match_threshold: 0.8
+
+# GPU Configuration
+gpu:
+  device: 0
+  half_precision: true
+  cudnn_benchmark: true
+
+# Display Configuration
+display:
+  show_fps: true
+  show_labels: true
+  show_conf: true
+  box_thickness: 2
+  font_size: 0.5
+  font_thickness: 2
+  color_mode: 'class'  # 'class' or 'tracking'
+
+# Recording Configuration
+recording:
+  enabled: false
+  output_path: '/workspace/results/recordings'
+  fps: 30
+  codec: 'mp4v'
+
+# Results Configuration
+results:
+  save_results: true
+  results_path: '/workspace/results'
+  save_crops: false
+  save_txt: false
