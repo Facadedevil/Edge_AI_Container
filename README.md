@@ -44,8 +44,8 @@ yolo-realtime/
 ## Installation
 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd yolo-realtime
+[git clone https://github.com/Facadedevil/Edge_AI_Container]
+cd Edge_AI_Container
 ```
 
 2. Build and run with Docker Compose
