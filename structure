@@ -1,4 +1,4 @@
-advantech/
+Edge_AI_Container/
 ├── Dockerfile
 ├── docker-compose.yml
 ├── README.md
