@@ -1,6 +1,6 @@
-# Universal Edge AI Container Solution
+# AI Container Solution for Nvidia GPUs
 
-A containerized, production-ready Edge AI solution optimized for low-powered NVIDIA devices (Jetson Nano, Xavier NX, AGX Xavier). This project provides a comprehensive framework for deploying AI applications at the edge with real-time performance monitoring and optimization.
+A containerized, production-ready AI solution optimized for low-powered NVIDIA devices. This project provides a comprehensive framework for deploying AI applications at the edge with real-time performance monitoring and optimization.
 
 ## Project Structure
 ```
@@ -30,7 +30,6 @@ yolo-realtime/
 ## 🚀 Key Features
 
 - **Universal Compatibility**: 
-  - Supports NVIDIA Jetson platforms (Nano, Xavier NX, AGX Xavier)
   - Compatible with x86_64 platforms with NVIDIA GPUs
   - Cross-platform container deployment
 
